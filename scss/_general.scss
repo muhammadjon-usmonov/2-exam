@@ -1,0 +1,42 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+body{
+    // background: #EDF3F8;
+    font-size: 15px;
+    font-family: 'public-sans','Arial',sans-serif;
+    line-height: 28px;
+    color: #36536B;
+    background-image: url('..//image/circle.png');
+    background-position: top -340px right 0;
+    background-repeat: no-repeat;
+    background-size: 780px 780px;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+img{
+    object-fit: cover;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+

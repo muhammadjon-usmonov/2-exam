@@ -1,0 +1,140 @@
+.hero-section .container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+}
+
+.hero{
+    padding-top: 75px;
+}
+
+.hero__title{
+    max-width: 546px;
+    width: 100%;
+    font-family: 'DM Serif Display','Arial',sans-serif;    
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 72px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.hero__image{
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.hero__form{
+    max-width: 445px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.input{
+    max-width: 305px;
+    background: #FBFCFE;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    padding-top: 16px;
+    padding-bottom: 14px;
+    padding-left: 27px;
+    padding-right: 105px;
+    border: none;
+ 
+}
+
+.hero__question{
+    color: #6C8294; 
+    padding-left: 20px;
+}
+
+
+.hero__link{
+    line-height: 18px;
+    color: #6C8294;
+    font-weight: bold;
+}
+
+.hero__button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 173px;
+    width: 100%;
+    font-family: Public Sans;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.115385px;
+    color: #FBFCFE;
+    background-color: #BA4270;
+    border-radius: 24px;
+    padding-top: 16px;
+    padding-bottom: 14px;
+    border:none;
+}
+
+@media only screen and (max-width:768px){
+    .hero-section .container{
+        flex-direction:column-reverse;
+    }
+
+    .hero{
+        margin: 0;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0;
+    }
+
+    .hero__title{
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+        letter-spacing: -0.369231px;
+    }
+    
+    .hero__reklama{
+        margin: 0 auto;
+    }
+    
+}
+
+@media only screen and (max-width:425px){
+    .hero__title{
+    font-size: 32px;
+    line-height: 36px;
+    }
+
+    .hero__form{
+        margin-bottom: 0;
+    }
+
+    .input{
+        max-width: 325px;
+        margin-bottom: 16px;
+    }
+
+    .hero__button{
+        position: static;
+        max-width: 325px;
+        margin-bottom: 24px;
+    }
+}
+
+@media only screen and (max-width:355px){
+    .hero__title{
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .hero__form{
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .input{
+        max-width: 280px;
+        width: 100%;
+    }
+}

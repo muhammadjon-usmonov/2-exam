@@ -1,0 +1,25 @@
+.nav__list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    // margin-right: 506px;
+    padding-top: 16px;
+}
+
+.nav__item{
+    &+&{
+        margin-left: 40px;
+    }
+    &:hover .nav__link{ 
+      opacity: 1;
+    }
+  
+}
+
+.nav__link{
+    font-weight: bold;
+    line-height: 18px;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    color: #36536B;
+}

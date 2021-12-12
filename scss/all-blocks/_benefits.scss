@@ -1,0 +1,97 @@
+.benefits__list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 96px;
+}
+
+.benefit__item{
+    text-align: center;
+    &+&{
+        margin-left: 30px;
+    }
+}
+
+.benefit__title{
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.138462px;
+    color: #36536B;
+    padding-top: 30px;
+}
+
+.benefit__text{
+    margin: 0;
+    font-family: Public Sans;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.115385px;
+    color: #6C8294;
+}
+
+.benefit__finans{
+    &::before{
+        content: "";
+        display: inline-block;
+        width: 106px;
+        height: 106px;
+        background-image: url('..//image/svg/finans.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+
+.benefit__coverage{
+    &::before{
+        content: "";
+        display: inline-block;
+        width: 106px;
+        height: 106px;
+        background-image: url('..//image/svg/coverage.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+
+.benefit__payments{
+    &::before{
+        content: "";
+        display: inline-block;
+        width: 106px;
+        height: 106px;
+        background-image: url('..//image/svg/payments.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .benefit__item{
+        max-width: 223px;
+        &+&{
+            margin-left: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width:575px){
+    .benefits__list{
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+
+    .benefit__item{
+        &+&{
+            margin-left: 0;
+            margin: 0 auto;
+            margin-top: 48px;
+        }
+        margin: 0 auto;
+    }
+}
